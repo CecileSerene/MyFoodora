@@ -1,0 +1,104 @@
+/*
+ * Made by Cecile Gontier
+ * date : 4th December
+ * version 1
+ */
+
+package restaurant;
+
+import java.util.ArrayList;
+
+import position.Position;
+
+public class Restaurant {
+	
+	private String name;
+	private static int ID;
+	private Position position;
+	private String username;
+	
+	private ArrayList<Starter> starterlist;
+	private ArrayList<MainDish> maindishlist;
+	private ArrayList<Dessert> dessertlist;
+	
+	private ArrayList<FullMeal> fullmeallist;
+	private ArrayList<HalfMeal> halfmeallist;
+	
+	public Restaurant(String name, Position position, String username) {
+		super();
+		this.name = name;
+		this.position = position;
+		this.username = username;
+		this.starterlist = new ArrayList<Starter>();
+		this.maindishlist = new ArrayList<MainDish>();
+		this.dessertlist = new ArrayList<Dessert>();
+		this.fullmeallist = new ArrayList<FullMeal>();
+		this.halfmeallist = new ArrayList<HalfMeal>();
+		
+	}
+	
+	
+	//Getters and Setters
+	public Position getPosition() {
+		return position;
+	}
+
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+
+	public ArrayList<Starter> getStarterlist() {
+		return starterlist;
+	}
+
+	public void setStarterlist(ArrayList<Starter> starterlist) {
+		this.starterlist = starterlist;
+	}
+
+	public ArrayList<MainDish> getMaindishlist() {
+		return maindishlist;
+	}
+
+	public void setMaindishlist(ArrayList<MainDish> maindishlist) {
+		this.maindishlist = maindishlist;
+	}
+
+	public ArrayList<Dessert> getDessertlist() {
+		return dessertlist;
+	}
+
+	public void setDessertlist(ArrayList<Dessert> dessertlist) {
+		this.dessertlist = dessertlist;
+	}
+
+	public ArrayList<FullMeal> getFullmeallist() {
+		return fullmeallist;
+	}
+
+	public void setFullmealList(ArrayList<FullMeal> fullmealList) {
+		this.fullmeallist = fullmealList;
+	}
+
+	public ArrayList<HalfMeal> getHalfmeallist() {
+		return halfmeallist;
+	}
+
+	public void setHalfmeallist(ArrayList<HalfMeal> halfmeallist) {
+		this.halfmeallist = halfmeallist;
+	}
+	
+	//Add method
+	public void addStarter(Starter s){
+		ArrayList<Starter> old = this.getStarterlist();
+		old.add(s);
+		this.setStarterlist(old);
+	}
+	
+	
+	
+	
+	
+	
+	
+
+}

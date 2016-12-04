@@ -1,0 +1,13 @@
+package restaurant;
+
+public interface MenusItem {
+	
+	public String name;
+	public double price;
+	public boolean glutenfree;
+	public enum type {VEGETARIAN,STANDARD};
+	
+	
+	
+
+}

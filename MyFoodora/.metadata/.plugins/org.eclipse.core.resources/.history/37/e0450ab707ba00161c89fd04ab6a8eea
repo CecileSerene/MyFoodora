@@ -1,0 +1,43 @@
+/*
+ * Made by Cecile Gontier
+ * date : 4th December
+ * version 1
+ */
+
+package restaurant;
+
+import java.util.ArrayList;
+
+import position.Position;
+
+public class Restaurant {
+	
+	private String name;
+	private static int ID;
+	private Position position;
+	private String username;
+	
+	private ArrayList<Starter> starterlist;
+	private ArrayList<MainDish> maindishlist;
+	private ArrayList<Dessert> dessertlist;
+	
+	private ArrayList<FullMeal> fullmealList;
+	private ArrayList<HalfMeal> halfmeallist;
+	
+	public Restaurant(String name, Position position, String username) {
+		super();
+		this.name = name;
+		this.position = position;
+		this.username = username;
+		this.starterlist = new ArrayList<Starter>();
+		
+	}
+	
+	public
+	
+	
+	
+	
+	
+
+}

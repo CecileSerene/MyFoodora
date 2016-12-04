@@ -1,0 +1,26 @@
+/*
+ * Made by Cecile Gontier
+ * date : 4th December
+ * version 1
+ */
+
+package restaurant;
+
+import java.util.ArrayList;
+
+import position.Position;
+
+public class Restaurant {
+	
+	private String name;
+	private Position position;
+	
+	private ArrayList<Starter> starterlist;
+	private ArrayList<MainDish> maindishlist;
+	private ArrayList<Dessert> dessertlist;
+	
+	private ArrayList<FullMeal> fullmealList;
+	private ArrayList<HalfMeal> halfmeallist;
+	
+
+}

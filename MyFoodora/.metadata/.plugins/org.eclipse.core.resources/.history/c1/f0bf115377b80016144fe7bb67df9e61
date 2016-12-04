@@ -1,0 +1,49 @@
+package restaurant;
+
+public class Meal {
+	
+	private String name;
+	private double price;
+	private boolean glutenfree;
+	private Type type;
+	
+	private Starter starter;
+	private MainDish maindish;
+	private Dessert dessert;
+	
+	public Meal(Starter starter, MainDish maindish, Dessert dessert) {
+		super();
+		this.starter = starter;
+		this.maindish = maindish;
+		this.dessert = dessert;
+		
+		//setting if vegetarian
+		if (starter == null | starter.getType() == Type.VEGETARIAN){
+			if (maindish.getType() == Type.VEGETARIAN){
+				if(dessert == null | dessert.getType() == Type.VEGETARIAN){
+					this.type = Type.VEGETARIAN;
+				}
+			}
+		}
+		this.type = Type.STANDARD;
+		
+		//setting if glutenfree
+		if (starter == null | starter.isGlutenfree()){
+			if (maindish.isGlutenfree()){
+				if(dessert == null | dessert.isGlutenfree()){
+					this.glutenfree = true;
+				}
+			}
+		}
+		this.glutenfree = false;
+		
+		//setting price
+		
+		
+	}
+
+	
+	
+	
+
+}

@@ -1,0 +1,19 @@
+package restaurant;
+
+import java.util.ArrayList;
+
+import position.Position;
+
+public class Restaurant {
+	
+	private String name;
+	private Position position;
+	
+	private ArrayList<Starter> Starterlist;
+	private ArrayList<MainDish> MainDishlist;
+	private ArrayList<Dessert> Dessertlist;
+	
+	private ArrayList<FullMeal> FullMealList;
+	
+
+}

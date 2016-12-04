@@ -1,0 +1,52 @@
+package restaurant;
+
+public class Starter implements MenusItem{
+	
+	private String name;
+	private double price;
+	private boolean glutenfree;
+	private enum type {VEGETARIAN,STANDARD};
+	
+	
+	public Starter(String name, double price, boolean glutenfree) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.glutenfree = glutenfree;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public double getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+
+	public boolean isGlutenfree() {
+		return glutenfree;
+	}
+
+
+	public void setGlutenfree(boolean glutenfree) {
+		this.glutenfree = glutenfree;
+	};
+	
+	
+	
+	
+
+}

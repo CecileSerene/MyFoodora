@@ -1,0 +1,16 @@
+package restaurant;
+
+public class Meal {
+	
+	private String name;
+	private double price;
+	private boolean glutenfree;
+	private Type type;
+	
+	private Starter starter;
+	private MainDish maindish;
+	private Dessert dessert;
+	
+	
+
+}
